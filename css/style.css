@@ -1,0 +1,135 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+
+}
+.head{
+    margin: 5rem auto;
+   
+    text-align: center;
+  
+}
+p{
+    margin-top: 3rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.boxes{
+ 
+    display: flex;
+    justify-content: space-between;
+    margin: 0 2.5rem;
+    
+    
+
+}
+.box{
+    height: 10rem;
+    width: 28rem;
+    background-color: grey;
+    border: 3.5px solid black;
+   
+}
+.iner_box{
+    float: right;
+    text-align: center;
+    height: 2rem;
+    width: 10rem;
+    
+}
+.pink{
+    background-color: rgb(193, 154, 167);
+    border-left: 3px solid black;
+    border-bottom:3px solid black ;
+
+}
+.red{
+    background-color: rgb(188, 44, 44);
+    border-left: 3px solid black;
+    border-bottom:3px solid black ;
+    color: #fff;
+}
+.yellow{
+    background-color: rgb(192, 192, 139);
+    border-left: 3px solid black;
+    border-bottom:3px solid black ;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 2rem;
+}
+.pink-box{
+    margin-right: 2.5rem;
+}
+
+/* start of media queries */
+
+@media screen and (min-device-width: 768px) and (max-device-width:991px) {
+    *{
+        overflow-x: hidden; 
+        text-align: center;  
+    }
+    .head{
+        margin: 2rem auto;
+    }
+    .boxes{
+        display: flex;
+        flex-flow: column;
+        margin: 0 2rem;
+        font-size: small;
+         overflow-x: hidden;
+         
+    }
+    .flex{
+        display: flex;
+        margin: 0 auto;
+        width: 100%;
+        overflow-x: hidden;
+        
+    }
+    
+    .yellow-box{
+        margin: 5rem auto;
+       width: 100%;
+       overflow-x: hidden;
+        
+    } 
+
+}
+
+@media screen and (max-width: 767px){
+
+    *{
+        overflow-x: hidden;   
+    }
+    .head{
+        margin: 2rem auto;
+        text-align: center;
+    }
+    .boxes{
+        display: flex;
+        flex-flow: column;
+        /* margin: 0 2rem; */
+        font-size: small;
+         overflow-x: hidden;
+         /* width: 100%; */
+            
+    }
+    .flex{
+        display: flex;
+        flex-flow: column;
+        margin: 0 auto;
+        overflow-x: hidden;
+        
+    }
+    .box{
+        margin:2rem auto;
+        width: 100%;
+    }
+    
+
+}
