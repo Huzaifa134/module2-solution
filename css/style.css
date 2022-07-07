@@ -20,11 +20,7 @@ p{
 .boxes{
  
     display: flex;
-    justify-content: space-between;
-    margin: 0 2.5rem;
-    
-    
-
+    justify-content: space-evenly;
 }
 .box{
     height: 10rem;
@@ -59,11 +55,10 @@ p{
 }
 .flex{
     display: flex;
-    justify-content: space-between;
-    margin: 0 2rem;
+    justify-content: space-evenly;
 }
 .pink-box{
-    margin-right: 2.5rem;
+    margin-right: 3rem;
 }
 
 /* start of media queries */
@@ -86,14 +81,17 @@ p{
     }
     .flex{
         display: flex;
-        margin: 0 auto;
+        /* margin: 0 auto; */
         width: 100%;
         overflow-x: hidden;
         
     }
-    
+    .pink-box{
+        margin-right: 2rem;
+    }
+   
     .yellow-box{
-        margin: 5rem auto;
+        margin: 2rem auto;
        width: 100%;
        overflow-x: hidden;
         
@@ -113,10 +111,9 @@ p{
     .boxes{
         display: flex;
         flex-flow: column;
-        /* margin: 0 2rem; */
+        margin: 0 2rem;
         font-size: small;
          overflow-x: hidden;
-         /* width: 100%; */
             
     }
     .flex{
@@ -127,7 +124,7 @@ p{
         
     }
     .box{
-        margin:2rem auto;
+        margin:1rem auto;
         width: 100%;
     }
     
